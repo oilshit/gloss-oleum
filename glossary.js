@@ -90,3 +90,9 @@ console.log();
 // let's try gather information of the class inside the class
 console.log(glossary1.definitionList[1].getAuthor());
 console.log(glossary1.definitionList[1].getAPA());
+
+console.log();
+
+const definitionObject = JSON.parse(JSON.stringify(glossary1.definitionList));
+
+console.log(definitionObject);
