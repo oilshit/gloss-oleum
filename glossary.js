@@ -26,12 +26,17 @@ class GlossaryItem {
     this.publisher = publisher;
   }
 
-  // get author name based on IPA citation
+  // get author name based on APA citation
   getAuthor() {
     const prename = this.author.split(" ");
     const firstname = prename.slice(0, prename.length - 1);
 
     return `${prename[prename.length - 1]}, ${firstname.join(" ")}`;
+  }
+
+  // get citation reference based on APA
+  getAPA() {
+    return `${this.getAuthor()} (${this.year}). <em>${this.title}</em>. ${this.publisher}`;
   }
 }
 
@@ -55,7 +60,7 @@ console.log(item1);
 console.log();
 
 // let's use information of item1
-//// to get the author based on IPA
+//// to get the author based on APA
 console.log(item1.getAuthor());
 
 console.log();
@@ -84,3 +89,4 @@ console.log();
 
 // let's try gather information of the class inside the class
 console.log(glossary1.definitionList[1].getAuthor());
+console.log(glossary1.definitionList[1].getAPA());
