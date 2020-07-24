@@ -60,3 +60,6 @@ glossary1.addDefinitionList(new GlossaryItem(
   "What Is JavaScript?",
   "tutsplus"
 ));
+
+// let's try gather information of the class inside the class
+console.log(glossary1.definitionList[0].getAuthor());
