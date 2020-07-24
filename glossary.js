@@ -17,10 +17,10 @@ class GlossaryItem {
 
   // get author name based on IPA citation
   getAuthor() {
-    prename = this.name.split(" ");
-    firstname = prename.slice(0, prename.length - 1);
+    const prename = this.author.split(" ");
+    const firstname = prename.slice(0, prename.length - 1);
 
-    return `${prename[prename.length - 1]}, ${prename.join(" ")}`;
+    return `${prename[prename.length - 1]}, ${firstname.join(" ")}`;
   }
 }
 
@@ -32,4 +32,4 @@ const item1 = new GlossaryItem(
   "BitDegree"
   );
 
-console.log(item1.getAuthor);
+console.log(item1.getAuthor());
