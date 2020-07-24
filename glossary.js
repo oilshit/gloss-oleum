@@ -3,6 +3,12 @@ class Glossary {
     this.name = name;
     this.definitionList = [];
   }
+
+  addDefinitionList(definitionList) {
+    this.definitionList.push(definitionList);
+
+    console.log(this.definitionList);
+  }
 }
 
 class GlossaryItem {
@@ -24,12 +30,33 @@ class GlossaryItem {
   }
 }
 
+const glossary1 = new Glossary("javascript");
+
 const item1 = new GlossaryItem(
   "object orient programming language designed to make web development easier and more attractive",
   "Laura M.",
   2020,
   "What Is JavaScript Used For And Why You Should Learn It",
   "BitDegree"
-  );
+);
+
+// const item2 = new GlossaryItem(
+//   "a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification",
+//   "Tom McFarlin",
+//   2016,
+//   "What Is JavaScript?",
+//   "tutsplus"
+// );
 
 console.log(item1.getAuthor());
+
+// console.log(item2.getAuthor());
+
+glossary1.addDefinitionList(item1);
+glossary1.addDefinitionList(new GlossaryItem(
+  "a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification",
+  "Tom McFarlin",
+  2016,
+  "What Is JavaScript?",
+  "tutsplus"
+));
