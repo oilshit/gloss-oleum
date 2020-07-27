@@ -1,9 +1,9 @@
 // let's init'd the glossary class
 class Glossary {
   // define glossary term
-  constructor(name) {
+  constructor(name, definitionList = []) {
     this.name = name;
-    this.definitionList = [];
+    this.definitionList = definitionList;
   }
 
   // add dedinition to the list
