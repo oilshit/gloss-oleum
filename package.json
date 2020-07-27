@@ -4,17 +4,23 @@
   "description": "GLOSS-oleum collects lists of oil and gas definitions in many references.",
   "main": "glossary.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daimessdn/gloss-oleum.git"
   },
-  "keywords": ["oil-and-gas", "glossary"],
+  "keywords": [
+    "oil-and-gas",
+    "glossary"
+  ],
   "author": "@daimessdn",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/daimessdn/gloss-oleum/issues"
   },
-  "homepage": "https://github.com/daimessdn/gloss-oleum#readme"
+  "homepage": "https://github.com/daimessdn/gloss-oleum#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }
