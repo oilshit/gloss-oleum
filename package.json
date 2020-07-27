@@ -4,7 +4,8 @@
   "description": "GLOSS-oleum collects lists of oil and gas definitions in many references.",
   "main": "glossary.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "jquery": "^3.5.1",
-    "mongodb": "^3.5.9"
+    "mongodb": "^3.5.9",
+    "nodemon": "^2.0.4"
   }
 }
