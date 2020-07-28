@@ -40,63 +40,6 @@ class GlossaryItem {
   }
 }
 
-// // let's init the first glossary
-// const glossary1 = new Glossary("javascript");
-
-// console.log();
-
-// // and alse the first glossary item
-// const item1 = new GlossaryItem(
-//   "object orient programming language designed to make web development easier and more attractive",
-//   "Laura M.",
-//   2020,
-//   "What Is JavaScript Used For And Why You Should Learn It",
-//   "BitDegree"
-// );
-
-// // let's see what item1 looks like
-// console.log(item1);
-
-// console.log();
-
-// // let's use information of item1
-// //// to get the author based on APA
-// console.log(item1.getAuthor());
-
-// console.log();
-
-// // console.log(item2.getAuthor());
-
-// // let see what glossary1 looks like
-// console.log(glossary1);
-
-// console.log();
-
-// // let's add several definition items to glossary1
-// glossary1.addDefinitionList(item1);
-// glossary1.addDefinitionList(new GlossaryItem(
-//   "a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification",
-//   "Tom McFarlin",
-//   2016,
-//   "What Is JavaScript?",
-//   "tutsplus"
-// ));
-
-// // let's see the final of glossary1 after the addition
-// console.log(glossary1);
-
-// console.log();
-
-// // let's try gather information of the class inside the class
-// console.log(glossary1.definitionList[1].getAuthor());
-// console.log(glossary1.definitionList[1].getAPA());
-
-// console.log();
-
-// const definitionObject = JSON.parse(JSON.stringify(glossary1.definitionList));
-
-// console.log(definitionObject);
-
 module.exports = {
   Glossary: Glossary,
   GlossaryItem: GlossaryItem
