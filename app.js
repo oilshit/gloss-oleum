@@ -1,8 +1,10 @@
+// imported libraries and modules
 const express = require("express");
 const mongo = require("mongodb").MongoClient;
 
 const glossary = require("./glossary.js");
 
+// init'd config
 const app = express();
 app.use(express.static("src"));
 app.set('view engine', 'ejs');
@@ -10,6 +12,7 @@ app.set('view engine', 'ejs');
 const PORT = process.env.PORT || 3000;
 const url = 'mongodb://localhost:27017';
 
+// init'd MongoDB connection
 mongo.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -18,10 +21,14 @@ mongo.connect(url, {
     console.error(err)
     return
   }
+
   console.log("mongodb is here to serve your data. enjoy!");
 
+  // init'd DB instance
   const db = client.db('glossoleum')
   const collection = db.collection('glossary')
+  
+  // // insert one glossary term
   // collection.insertOne(
   //   new glossary.Glossary("javascript"),
   //   (err, result) => {
@@ -32,6 +39,7 @@ mongo.connect(url, {
 
   // })
 
+  // select all data
   collection.find().toArray((err, items) => {
     console.log(items)
 
@@ -40,6 +48,8 @@ mongo.connect(url, {
     }));
   })
 
+  // // push one glossary item
+  // // into one glossary term
   // collection.updateOne(
   //   {name: "javascript"},
   //   {
