@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 const PORT = process.env.PORT || 3000;
 const url = 'mongodb://localhost:27017';
 
-const connection = mongo.connect(url, {
+mongo.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }, (err, client) => {
@@ -55,6 +55,8 @@ const connection = mongo.connect(url, {
   //   }, (err, item) => {
   //   console.log("one definition added")
   // });
+
+  // client.close();
 });
 
 app.get("/", (requset, response) => {
