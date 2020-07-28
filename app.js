@@ -1,11 +1,15 @@
 const express = require("express");
 const mongo = require("mongodb").MongoClient;
+
+const glossary = require("./glossary.js");
+
 const app = express();
+app.use(express.static("src"));
+app.set('view engine', 'ejs');
 
 const PORT = process.env.PORT || 3000;
 const url = 'mongodb://localhost:27017';
 
-const glossary = require("./glossary.js");
 
 mongo.connect(url, {
     useNewUrlParser: true,
@@ -30,7 +34,7 @@ mongo.connect(url, {
   collection.find().toArray((err, items) => {
     console.log(items)
   })
-  
+
 })
 
 app.get("/", (requset, response) => {
