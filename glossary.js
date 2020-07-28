@@ -40,6 +40,12 @@ class GlossaryItem {
   }
 }
 
+// testing is allowed from here
+
+// code
+
+// testing is allowed until here
+
 module.exports = {
   Glossary: Glossary,
   GlossaryItem: GlossaryItem

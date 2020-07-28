@@ -7,7 +7,7 @@ In this note, we will learn how to use the `glossary.js`
     - property
       - `name` property, contains glossary term
       - `definitionList` property, contains a place for definition and its reference, init'd by an empty array.
-    -methods
+    - methods
       - `addDefinitionList(definitionList)`, adding one definition to glossary term with `definitionList` parameter
   - `GlossaryItem` contains
     - property:
