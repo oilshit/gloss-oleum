@@ -20,15 +20,25 @@
              url("src/fonts/porpora/Porpora-Regular\ 12.14.56.ttf") format("ttf");
       }
 
-      #glossarium-search label {
+      body, .reference-item {
+        font-family: "Porpora", sans-serif;
+        font-size: 14px;
+      }
+
+      #glossarium-search label, .reference-section {
         font-size: 12px;
         font-family: "Major Mono Display", sans-serif;
+      }
+
+      .glossarium-term {
+        font: 24px "Porpora";
+        margin: 0;
       }
 
       input {
         border: none;
         border-bottom: 2px solid #000;
-        font-size: 30px;
+        font-size: 24px;
         outline: none;
         font-family: "Porpora";
       }
@@ -46,9 +56,51 @@
       <input type="text" name="query" />
     </form>
 
-    <div class="query-results">
-      
+    <div id="query-results">
+      <div id="query">
+        <h1 class="glossarium-keyword">liquid specific gravity</h1>
+
+        <p class="reference-section">
+          according to<br />
+          <span class="reference-item">McCain, William D., Jr.</span> is
+        </p>
+
+        <p class="glossarium-term">
+          ratio of the density of the liquid to the density of water both taken at the same temperature and pressure.
+        </p>
+      </div>
+
+      <hr />
+
+      <div id="query">
+        <h1 class="glossarium-keyword">oil formation volume factor</h1>
+
+        <p class="reference-section">
+          according to<br />
+          <span class="reference-item">McCain, William D., Jr.</span> is
+        </p>
+
+        <p class="glossarium-term">
+          volume of reservoir oil required to produce one barrel of oil in the stock tank.
+        </p>
+      </div>
+
+      <hr />
+
+      <div id="query">
+        <h1 class="glossarium-keyword">solution gas-oil ratio (GOR)</h1>
+
+        <p class="reference-section">
+          according to<br />
+          <span class="reference-item">McCain, William D., Jr.</span> is
+        </p>
+
+        <p class="glossarium-term">
+          quantity of gas dissolved in an oil at reservoir conditions.
+        </p>
+      </div>
     </div>
+
 
     <script src="glossary.js"></script>
   </body>
