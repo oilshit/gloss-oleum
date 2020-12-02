@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+
+    <title>gloss-oleum</title>
+    
+    <style>
+      @font-face {
+        font-family: "Major Mono Display";
+        src: url("src/fonts/MajorMonoDisplay-Regular.ttf");
+      }
+
+      @font-face {
+        font-family: "Porpora";
+        src: url("src/fonts/porpora/Porpora-Regular.woff2") format("woff2"),
+             url("src/fonts/porpora/Porpora-Regular.woff") format("woff"),
+             url("src/fonts/porpora/Porpora-Regular\ 12.14.56.ttf") format("ttf");
+      }
+
+      #glossarium-search label {
+        font-size: 12px;
+        font-family: "Major Mono Display", sans-serif;
+      }
+
+      input {
+        border: none;
+        border-bottom: 2px solid #000;
+        font-size: 30px;
+        outline: none;
+        font-family: "Porpora";
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="glossarium-search">
+      <label for="query">
+        I want to search about...
+      </label>
+
+      <br />
+
+      <input type="text" name="query" />
+    </form>
+
+    <div class="query-results">
+      
+    </div>
+
+    <script src="glossary.js"></script>
+  </body>
+</html>
