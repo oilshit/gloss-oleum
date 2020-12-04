@@ -48,5 +48,15 @@ const terms = [
             title: "Petroleum Production Engineering: A Computer-Assisted Approach",
             publisher: "Gulf Professional Publishing"
         }
+    },
+    {
+        term: "gas drive",
+        definition: "the drive mechanism where the gas in the reservoir has come out of solution and rises to the top of the reservoir to form a gas cap.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
     }
 ];
