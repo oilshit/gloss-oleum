@@ -1,27 +1,91 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* @font-face {
   font-family: "Major Mono Display";
   src: url("fonts/MajorMonoDisplay-Regular.ttf");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Porpora";
   src: url("fonts/porpora/Porpora-Regular.woff2") format("woff2"),
        url("fonts/porpora/Porpora-Regular.woff") format("woff"),
        url("fonts/porpora/Porpora-Regular\ 12.14.56.ttf") format("ttf");
+} */
+
+/* @font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-Regular.ttf");
+} */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #d7686d;
+  }
+  50% {
+		box-shadow: 0 0 0 25px #d7686d;
+  }
+  100% {
+		box-shadow: 0 0 0 0 #d7686d;
+  }
 }
 
-body, .reference-item {
-  font-family: "Porpora", sans-serif;
+body {
+  width: 60%;
+  font-family: "Space Mono", sans-serif;
   font-size: 14px;
 }
 
-#glossarium-search label, .reference-section {
-  font-size: 12px;
-  font-family: "Major Mono Display", sans-serif;
+.query {
+  position: relative;
 }
 
-.query-definition {
-  font: 24px "Porpora";
+.query .query-keyword::after {
+  transition: all 1s ease;
+  content: " ";
+  position: absolute;
+  display: block;
+  border-bottom: 3px solid #d7686d;
+  width: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.query:hover .query-keyword::after {
+  width: 100%;
+}
+
+.query:hover .dot-pulse {
+  animation: pulse 1s ease infinite;
+}
+  
+#glossarium-search label, .reference-section {
+  font-size: 12px;
+  font-family: "Space Mono", sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.query-keyword {
+  margin-left: 28px;
+  position: relative;
+}
+
+.dot-pulse {
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #d7686d;
+  transition: animation 1s ease;
+  z-index: -1;
+} 
+
+.query-definition  {
+  font: 16px "Space Mono";
   margin: 0;
 }
 
@@ -30,6 +94,7 @@ input[name="query"] {
   border-bottom: 2px solid #000;
   font-size: 24px;
   font-weight: bold;
+  width: 100%;
   outline: none;
-  font-family: "Porpora";
+  font-family: "Space Mono";
 }
