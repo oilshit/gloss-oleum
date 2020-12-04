@@ -6,44 +6,8 @@
           content="width=device-width, initial-scale=1.0">
 
     <title>gloss-oleum</title>
-    
-    <style>
-      @font-face {
-        font-family: "Major Mono Display";
-        src: url("src/fonts/MajorMonoDisplay-Regular.ttf");
-      }
 
-      @font-face {
-        font-family: "Porpora";
-        src: url("src/fonts/porpora/Porpora-Regular.woff2") format("woff2"),
-             url("src/fonts/porpora/Porpora-Regular.woff") format("woff"),
-             url("src/fonts/porpora/Porpora-Regular\ 12.14.56.ttf") format("ttf");
-      }
-
-      body, .reference-item {
-        font-family: "Porpora", sans-serif;
-        font-size: 14px;
-      }
-
-      #glossarium-search label, .reference-section {
-        font-size: 12px;
-        font-family: "Major Mono Display", sans-serif;
-      }
-
-      .glossarium-term {
-        font: 24px "Porpora";
-        margin: 0;
-      }
-
-      input[name="query"] {
-        border: none;
-        border-bottom: 2px solid #000;
-        font-size: 24px;
-        font-weight: bold;
-        outline: none;
-        font-family: "Porpora";
-      }
-    </style>
+    <link rel="stylesheet" href="src/main.css">
   </head>
 
   <body>
@@ -57,52 +21,10 @@
       <input type="text" name="query" />
     </form>
 
-    <div id="query-results">
-      <div id="query">
-        <h1 class="glossarium-keyword">liquid specific gravity</h1>
+    <div id="query-results"></div>
 
-        <p class="reference-section">
-          according to<br />
-          <span class="reference-item">McCain, William D., Jr.</span> is
-        </p>
-
-        <p class="glossarium-term">
-          ratio of the density of the liquid to the density of water both taken at the same temperature and pressure.
-        </p>
-      </div>
-
-      <hr />
-
-      <div id="query">
-        <h1 class="glossarium-keyword">oil formation volume factor</h1>
-
-        <p class="reference-section">
-          according to<br />
-          <span class="reference-item">McCain, William D., Jr.</span> is
-        </p>
-
-        <p class="glossarium-term">
-          volume of reservoir oil required to produce one barrel of oil in the stock tank.
-        </p>
-      </div>
-
-      <hr />
-
-      <div id="query">
-        <h1 class="glossarium-keyword">solution gas-oil ratio (GOR)</h1>
-
-        <p class="reference-section">
-          according to<br />
-          <span class="reference-item">McCain, William D., Jr.</span> is
-        </p>
-
-        <p class="glossarium-term">
-          quantity of gas dissolved in an oil at reservoir conditions.
-        </p>
-      </div>
-    </div>
-
-
-    <script src="glossary.js"></script>
+    <script src="terms.js"></script>
+    <!-- <script src="glossary.js"></script> -->
+    <script src="main.js"></script>
   </body>
 </html>

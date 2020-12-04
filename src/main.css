@@ -1,3 +1,35 @@
-body {
-  font-family: "Helvetica Neue";
+@font-face {
+  font-family: "Major Mono Display";
+  src: url("fonts/MajorMonoDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Porpora";
+  src: url("fonts/porpora/Porpora-Regular.woff2") format("woff2"),
+       url("fonts/porpora/Porpora-Regular.woff") format("woff"),
+       url("fonts/porpora/Porpora-Regular\ 12.14.56.ttf") format("ttf");
+}
+
+body, .reference-item {
+  font-family: "Porpora", sans-serif;
+  font-size: 14px;
+}
+
+#glossarium-search label, .reference-section {
+  font-size: 12px;
+  font-family: "Major Mono Display", sans-serif;
+}
+
+.query-definition {
+  font: 24px "Porpora";
+  margin: 0;
+}
+
+input[name="query"] {
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 24px;
+  font-weight: bold;
+  outline: none;
+  font-family: "Porpora";
 }
