@@ -31,7 +31,7 @@
 }
 
 body {
-  width: 60%;
+  width: 50%;
   font-family: "Space Mono", sans-serif;
   font-size: 14px;
 }
@@ -97,4 +97,10 @@ input[name="query"] {
   width: 100%;
   outline: none;
   font-family: "Space Mono";
+}
+
+@media screen and (max-width: 600) {
+  body {
+    width: 100%;
+  }
 }
