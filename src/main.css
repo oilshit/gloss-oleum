@@ -40,7 +40,7 @@ body {
   position: relative;
 }
 
-.query .query-keyword::after {
+/* .query .query-keyword::after {
   transition: all 1s ease;
   content: " ";
   position: absolute;
@@ -49,11 +49,11 @@ body {
   width: 0;
   bottom: 0;
   left: 0;
-}
+} */
 
-.query:hover .query-keyword::after {
+/* .query:hover .query-keyword::after {
   width: 100%;
-}
+} */
 
 .query:hover .dot-pulse {
   animation: pulse 1s ease infinite;
@@ -101,6 +101,6 @@ input[name="query"] {
 
 @media screen and (max-width: 600px) {
   body {
-    width: 100%;
+    width: 95%;
   }
 }
