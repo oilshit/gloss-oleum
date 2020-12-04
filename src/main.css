@@ -99,6 +99,7 @@ input[name="query"] {
   border-bottom: 2px solid #000;
   font-size: 20px;
   font-weight: bold;
+  background-color: transparent;
   width: 85%;
   outline: none;
   font-family: "Space Mono";
