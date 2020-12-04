@@ -94,12 +94,12 @@ input[name="query"] {
   border-bottom: 2px solid #000;
   font-size: 24px;
   font-weight: bold;
-  width: 100%;
+  width: 95%;
   outline: none;
   font-family: "Space Mono";
 }
 
-@media screen and (max-width: 600) {
+@media screen and (max-width: 600px) {
   body {
     width: 100%;
   }
