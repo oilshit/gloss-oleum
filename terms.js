@@ -58,5 +58,55 @@ const terms = [
             title: "Petroleum Production Engineering: A Computer-Assisted Approach",
             publisher: "Gulf Professional Publishing"
         }
-    }
+    },
+    {
+        term: "solution gas-oil ratio (GOR)",
+        definition: "amount of gas (in standard condition) that will dissolve in unit volume of oil when both are taken down to the reservoir at the prevailing pressure and temperature.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
+    {
+        term: "standard condition",
+        definition: "14.7 psia and 60°F in most states in the United States.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
+    {
+        term: "transient flow",
+        definition: "a flow regime where/when the radius of pressure wave propagation from wellbore has not reached any boundaries of the reservoir.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
+    {
+        term: "steady-state flow",
+        definition: "a flow regime where the pressure at any point in the reservoir remains constant over time",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
+    {
+        term: "pseudo-steady-state flow",
+        definition: "a flow regime where the pressure at any point in the reservoir declines at the same constant rate over time.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
 ];
