@@ -109,4 +109,24 @@ const terms = [
             publisher: "Gulf Professional Publishing"
         }
     },
+    {
+        term: "IPR curve",
+        definition: "a graphical presentation of the relation between the flowing bottom-hole pressure and liquid production rate.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
+    {
+        term: "productivity index (PI)",
+        definition: "the magnitude of the slope of the IPR curve.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
 ];
