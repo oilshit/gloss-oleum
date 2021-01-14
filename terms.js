@@ -129,4 +129,14 @@ const terms = [
             publisher: "Gulf Professional Publishing"
         }
     },
+    {
+        term: "pressure drawdown test",
+        definition: "a series of bottom-hole pressure measurements made during a period of flow at constant production rate.",
+        citation: {
+            author: ["Amanat U. Chaudry"],
+            year: 2004,
+            title: "Oil Well Testing Handbook",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
 ];
