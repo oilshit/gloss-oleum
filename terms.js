@@ -139,4 +139,14 @@ const terms = [
             publisher: "Gulf Professional Publishing"
         }
     },
+    {
+        term: "viscosity",
+        definition: "an empirical parameter used for describing the resistance to flow of fluid.",
+        citation: {
+            author: ["Boyun Guo", "William C. Lyons", "Ali Ghalambor"],
+            year: 2007,
+            title: "Petroleum Production Engineering: A Computer-Assisted Approach",
+            publisher: "Gulf Professional Publishing"
+        }
+    },
 ];
