@@ -16,7 +16,8 @@ document.searchGlossary.query.addEventListener("input", () => {
                             >${term.term}</h1>
                         <p class="reference-section">
                             according to 
-                            <span class="reference-item">${term.citation.author.join(", ")}</span>
+                            <span class="reference-item">${term.citation.author.join(", ")}<br />
+                                                         in ${term.citation.title} (${term.citation.year})</span>
                         </p>
                         <p class="query-definition">
                             ${term.definition}
