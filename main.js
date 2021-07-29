@@ -30,3 +30,9 @@ document.searchGlossary.query.addEventListener("input", () => {
         container.innerHTML = "<h1>type the keyword for insights drillin' </h1>"
     }
 });
+
+document.searchGlossary.query.addEventListener("submit", (event) => {
+    console.log("submitted");
+    event.preventDefault();
+    event.target.value = "";
+});

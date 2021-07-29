@@ -1,22 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: "Modernist";
+  src: url("fonts/modernist/Sk-Modernist-Regular.otf");
+}
 
+@font-face {
+  font-family: "Modernist";
+  src: url("fonts/modernist/Sk-Modernist-Regular.otf");
+  font-weight: "bold";
+}
 
-/* @font-face {
-  font-family: "Major Mono Display";
-  src: url("fonts/MajorMonoDisplay-Regular.ttf");
-} */
-
-/* @font-face {
-  font-family: "Porpora";
-  src: url("fonts/porpora/Porpora-Regular.woff2") format("woff2"),
-       url("fonts/porpora/Porpora-Regular.woff") format("woff"),
-       url("fonts/porpora/Porpora-Regular\ 12.14.56.ttf") format("ttf");
-} */
-
-/* @font-face {
-  font-family: "Space Grotesk";
-  src: url("fonts/SpaceGrotesk-Regular.ttf");
-} */
+@font-face {
+  font-family: "Modernist Mono";
+  src: url("fonts/modernist/Sk-Modernist-Mono.otf");
+}
 
 @keyframes pulse {
   0% {
@@ -32,7 +28,7 @@
 
 body {
   width: 50%;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Modernist Mono", sans-serif;
   font-size: 14px;
 }
 
@@ -60,8 +56,8 @@ body {
 }
   
 #glossarium-search label, .reference-section {
-  font-size: 12px;
-  font-family: "Space Mono", sans-serif;
+  font-size: 13px;
+  font-family: "Modernist Mono", sans-serif;
 }
 
 #query-results h1 {
@@ -90,7 +86,9 @@ p {
 } 
 
 .query-definition  {
-  font: 16px "Space Mono";
+  font: 16px "Modernist Mono";
+  line-height: 24px;
+
   margin: 0;
 }
 
@@ -102,7 +100,7 @@ input[name="query"] {
   background-color: transparent;
   width: 85%;
   outline: none;
-  font-family: "Space Mono";
+  font-family: "Modernist Mono";
 }
 
 @media screen and (max-width: 600px) {
